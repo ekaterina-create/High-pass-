@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+button{
+  border: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "TT Firs Neue", sans-serif;
+  background-color: var(--color-white);
+  color:#FFFFFF;
+}
+
+img {
+  max-width: 100%;
+}
+button:focus-visible{
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+a:focus,
+a:focus-visible{
+outline: none;
+}
+
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible{
+outline:1px solid #ff4019;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.is-outer {
+  position: relative !important; // stylelint-disable-line declaration-no-important
+  left: -9999px !important; // stylelint-disable-line declaration-no-important
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.for-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.error {
+  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
+}
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1310px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+
+.section__title{
+font-family: TT Firs Neue;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+}
+
+.transparent-btn{
+font-family: "Roboto" sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+border: 3px solid #FF6E30;
+background-color: transparent;
+padding: 15px 22px;
+transition: all .2s ease-in-out;
+}
+.transparent-btn:hover{
+  background: #FF6E30;
+}
+.transparent-btn:focus{
+  background: #BC572B;
+}
+.transparent-btn:active{
+  background: #CE4307;
+  border: 3px solid #CE4307;
+}
+
+.btn-orange {
+  font-family: "Roboto", sans-serif;
+  background: #ff6e30;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 15px 21px;
+  border: 3px solid #ff6e30;
+  transition: all .2s ease-in-out;
+}
+.btn-orange:hover{
+  background-color: #BC572B;
+  border: 3px solid #BC572B;
+}
+
+.btn-orange:focus{
+  border: 3px solid #CE4307;
+}
+
+.btn-orange:active{
+  background: #CE4307;
+  border: 3px solid #CE4307;
+}
+@media (max-width: 1380px) {
+  .container{
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+}

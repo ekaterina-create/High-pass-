@@ -1,0 +1,270 @@
+.section-projects {
+  padding: 41px 0 23px;
+  color: #202020;
+
+  &__title {
+    margin: 0;
+    color: #202020;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 13px;
+  }
+}
+
+.tabs {
+  margin-bottom: 58px;
+}
+.tabs__btn{
+  transition: all .2s linear;
+}
+.tabs__btn.active {
+  background-color: #ff6e30;
+  color: #ffffff;
+}
+.tabs__btn:hover {
+  color: #ff6e30;
+  
+}
+.tabs__btn:focus-visible {
+  background-color: #FFD4C1;
+  
+}
+.tabs__btn.active:hover {
+  background-color: #C4C4C4;
+ 
+}
+.tabs__btn {
+  padding: 6px 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.tabs__btn:first-child {
+  padding: 6px 13px;
+  margin-right: 27px;
+}
+
+.tabs-grid-one,
+.tabs-grid-two {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 295px);
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.parsing {
+  background-image: url("../../img/tab5.jpg");
+  grid-column: 4/7;
+  grid-row: 1/2;
+  color: #fff;
+  padding: 22px 30px;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    max-width: 292px;
+    margin-bottom: 5px;
+  }
+  &__text {
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 292px;
+    margin-bottom: 58px;
+  }
+}
+.parsing > .date,
+.oblivion > .date {
+  color: #fff;
+  margin-bottom: 4px;
+}
+.oblivion {
+  position: relative;
+  background-image: url("../../img/tab4.jpg");
+  grid-column: 1/4;
+  grid-row: 2/3;
+  color: #fff;
+  padding: 22px 30px;
+}
+.oblivion::after {
+  background-color: #333;
+  content: "#проектзабвение";
+  padding: 7px 15px;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.tabs-grid-one__item:last-child {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  grid-column: 4/7;
+  grid-row: 2/3;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: grid;
+}
+
+.tabs__nav {
+  max-width: 102px;
+  margin: 0 auto;
+}
+.tabs-grid-two__item > .parsing__text,
+.oblivion > .parsing__text {
+  margin-bottom: 92px;
+}
+.tabs-grid-two__item:first-child {
+  position: relative;
+  padding: 22px 30px;
+  color: #fff;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-image: url("../../img/tab2-1.jpg");
+  background-size: cover;
+}
+.tabs-grid-two__item:first-child::after {
+  background-color: #333;
+  content: "#портрет";
+  padding: 7px 15px;
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.tabs-grid-two__item:first-child > .date {
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.tabs-grid-two__item:last-child {
+  grid-column: 4/7;
+  grid-row: 2/3;
+  background-image: url("../../img/tab2-7.jpg");
+  background-size: cover;
+}
+
+.tabs-grid-two__item:nth-child(2) {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  grid-column: 4/7;
+  grid-row: 1/2;
+}
+
+.scenery,
+.portrait,
+.thing {
+  position: relative;
+}
+
+.scenery::after {
+  background-color: #333;
+  content: "#пейзаж";
+  padding: 7px 15px;
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.portrait::after {
+  background-color: #333;
+  content: "#портрет";
+  padding: 7px 15px;
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.thing::after {
+  background-color: #333;
+  content: "#предмет";
+  padding: 7px 15px;
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.date {
+  margin: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  color: #999999;
+  display: flex;
+  align-items: flex-end;
+}
+.date svg {
+  margin-right: 2px;
+}
+.tabs-subgrid__item.one,
+.tabs-subgrid__item.two {
+  position: relative;
+}
+.tabs-subgrid__item.one::after {
+  background-color: #333;
+  content: "#ретушь";
+  padding: 7px 15px;
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+.tabs-subgrid__item.two::after {
+  background-color: #333;
+  content: "#портрет";
+  padding: 7px 15px;
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}

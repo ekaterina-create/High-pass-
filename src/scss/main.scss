@@ -1,0 +1,10 @@
+// @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
+
+@import "./components/header";
+@import "./components/preview-section.scss";
+@import "./components/about-section.scss";
+@import "./components/projects-section.scss";
+@import "./components/services-section.scss";
+@import "./components/classes-section.scss";
+@import "./components/contacts-section.scss";
+@import "./components/footer.scss";

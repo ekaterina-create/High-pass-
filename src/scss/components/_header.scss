@@ -1,0 +1,150 @@
+.header {
+  background-color: #202020;
+
+  &__logo {
+    margin-right: 136px;
+  }
+
+  &__container {
+    padding: 24px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+}
+
+.search {
+  background-color: #4A4A4A;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 90px;
+
+  &-link {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    transition: color .2s linear;
+  }
+
+  &-link:not(:last-child) {
+    margin-right: 78px;
+  }
+}
+
+.social-link:not(:last-child) {
+  margin-right: 18px;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 10px;
+}
+
+.search__contacts {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0;
+
+}
+
+.form {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #E9E9E9;
+    color: #E9E9E9;
+  }
+
+  &__input::placeholder {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E9E9E9;
+  }
+
+  &__input:focus::placeholder {
+    color: transparent
+  }
+}
+
+.nav-link:hover {
+  color: #FF6E30;
+}
+
+.nav-link:focus-visible {
+  background-color: #BC572B;
+}
+
+.nav-link:active {
+  color: #CE4307;
+}
+.social-link:hover> svg path,
+.footer__link:hover> svg path{
+  fill:#FF6E30;
+}
+.social-link:focus-visible> svg path,
+.footer__link:focus-visible> svg path{
+  fill:#BC572B;
+}
+.social-link:active> svg path,
+.footer__link:active> svg path{
+  fill:#CE4307;
+}
+.search__contacts,
+.search__contacts svg{
+  transition: color .2s ease-in-out;
+}
+
+.search__contacts:hover{
+  color: #FF6E30;
+}
+.search__contacts:hover> svg path{
+ fill: #FF6E30;
+}
+.search__contacts:focus-visible{
+  color: #FF6E30;
+}
+.search__contacts:focus-visible{
+ background-color: #BC572B;
+}
+.search__contacts:focus-visible{
+  color: #FF6E30;
+}
+.search__contacts:active> svg path{
+ background-color: #CE4307;
+}
+.search__contacts:active{
+  color: #CE4307;
+ }
+ .form__input:hover{
+   border-bottom: 1px solid #FF6E30;
+ }
+ .form__input{
+   transition: all .2s linear;
+ }
+ .form__input:focus-visible{
+  border-bottom: 1px solid #CE4307;
+}
+@media (max-width: 1340px) {
+  .nav-link:not(:last-child) {
+    margin-right: 33px;
+  }
+}
