@@ -7,9 +7,13 @@
             <button class="btn-orange">Узнать больше</button>
          </div>
          <div class="section-preview__item">
-            <h2 class="section-preview__title">Работы участников предыдущего мастер-класса</h2><img src="../img/3.jpg"
-               alt="">
-         </div>
+            <h2 class="section-preview__title">Работы участников предыдущего мастер-класса</h2>
+            <picture>
+               <source media="(max-width:600px)" srcset="../img/4(3).jpg">
+               <source media="(min-width: 1000px)" srcset="../img/4(2).jpg">
+               <img class='section-preview__img' src="../img/3.jpg" alt="Fallback value">
+             </picture>          
+           </div>
          <div class="section-preview__item"><img src="../img/4.jpg" alt=""></div>
          <div class="section-preview__item"><img src="../img/2.jpg" alt=""></div>
       </div>

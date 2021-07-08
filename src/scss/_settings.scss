@@ -10,6 +10,10 @@ html {
 }
 button{
   border: none;
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
 }
 body {
   margin: 0;
@@ -17,6 +21,7 @@ body {
   font-family: "TT Firs Neue", sans-serif;
   background-color: var(--color-white);
   color:#FFFFFF;
+  
 }
 
 img {
@@ -97,7 +102,7 @@ line-height: 31px;
 }
 
 .transparent-btn{
-font-family: "Roboto" sans-serif;
+font-family: Roboto sans-serif;
 font-weight: 700;
 font-size: 16px;
 line-height: 19px;
@@ -145,7 +150,44 @@ transition: all .2s ease-in-out;
 @media (max-width: 1380px) {
   .container{
   max-width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   }
+}
+@media (max-width: 1040px) {
+  .container{
+  max-width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
+  }
+}
+@media (max-width: 768px) {
+  .container{
+  max-width: 100%;
+  padding-left: 27px;
+  padding-right: 27px;
+  }
+}
+@media (max-width: 540px) {
+  .container{
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  .section__title {
+     font-size: 18px;
+    line-height: 23.22px;
+}
+.btn-orange {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 21px;
+}
+.transparent-btn{
+  font-size: 14px;
+  line-height: 16.5px;
+  padding: 9px 18px;
+  
+  }
+
 }
