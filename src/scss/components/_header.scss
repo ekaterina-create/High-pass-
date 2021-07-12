@@ -191,7 +191,7 @@ input.form__input:focus {
   top: 75px;
   left: 0;
   right: 0;
-  min-height: 541px;
+  min-height: 548px;
   z-index: 200;
   justify-content: flex-start;
 }
@@ -313,54 +313,9 @@ input.form__input:focus {
   .header {
     position: relative;
   }
-
-  .nav {
-    position: absolute;
-    bottom: 13px;
-    left: 27px;
-    right: 27px;
-    margin-right: 0;
-  }
-
-  .search__contacts {
-    position: absolute;
-    right: 93px;
-    top: 27px;
-  }
-
-  .social {
-    display: none;
-  }
-
-  .form__input {
-    display: none;
-  }
-
-  .search__form {
-    position: absolute;
-    right: 27px;
-    top: 27px;
-  }
-
-  .header__search {
-    min-height: 45px;
-  }
-}
-
-@media (max-width: 768px) {
-  .header__container {
-    padding: 26px 31px;
-  }
-  .form.active {
-    background-color: #202020;
-    z-index: 20;
-    display: flex;
-    min-width: 40%;
-    flex-direction: row-reverse;
-  }
   .form.active > .form__input {
     display: block;
-    min-width: 90%;
+    width: 90%;
   }
   .form__btn {
     position: relative;
@@ -402,13 +357,58 @@ input.form__input:focus {
   .form.active > .form__btn::before {
     display: block;
   }
+  .form.active {
+    background-color: #202020;
+    z-index: 20;
+    display: flex;
+    min-width: 40%;
+    flex-direction: row-reverse;
+  }
+  .nav {
+    position: absolute;
+    bottom: 13px;
+    left: 27px;
+    right: 27px;
+    margin-right: 0;
+  }
+
+  .search__contacts {
+    position: absolute;
+    right: 93px;
+    top: 27px;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .form__input {
+    display: none;
+  }
+
+  .search__form {
+    position: absolute;
+    right: 27px;
+    top: 27px;
+  }
+
+  .header__search {
+    min-height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    padding: 26px 31px;
+  }
+
   .search__contacts {
     right: 93px;
     top: 28px;
   }
 
   .search__container {
-    padding: 14px 31px;
+    padding: 14px 18px;
   }
 
   .form__btn {
@@ -445,7 +445,9 @@ input.form__input:focus {
     width: 20px;
     height: 20px;
   }
-
+  .nav.active {
+    min-height: 541px;
+  }
   .search__form svg {
     min-width: 100%;
     min-height: 100%;
@@ -454,6 +456,10 @@ input.form__input:focus {
 @media (max-width: 540px) {
   .nav.active {
     top: 67px;
+  }
+  .form__btn {
+    width: 18px;
+    height: 18px;
   }
   .form__input::placeholder {
     font-size: 14px;
@@ -482,13 +488,10 @@ input.form__input:focus {
     background-color: #202020;
     z-index: 20;
     display: flex;
-    min-width: 86%;
+    min-width: 88.7%;
     flex-direction: row-reverse;
   }
-  .form__btn {
-    width: 18px;
-    height: 18px;
-  }
+
   .nav.active {
     padding: 48px 10px 36px 12px;
   }

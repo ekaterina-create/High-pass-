@@ -1,1 +1,209 @@
-:root{--color-black:#000;--color-white:#fff}.custom-checkbox__field:checked+.custom-checkbox__content::after{opacity:1}.custom-checkbox__field:focus+.custom-checkbox__content::before{outline:red solid 2px;outline-offset:2px}.custom-checkbox__field:disabled+.custom-checkbox__content{opacity:.4;pointer-events:none}@font-face{font-family:"TT Firs Neue";src:url(../fonts/TTFirsNeue-Light.woff2) format("woff2");font-weight:300}@font-face{font-family:"TT Firs Neue";src:url(../fonts/TTFirsNeue-Regular.woff2) format("woff2");font-weight:400}@font-face{font-family:"TT Firs Neue";src:url(../fonts/TTFirsNeue-Bold.woff2) format("woff2");font-weight:700}@font-face{font-family:Roboto;src:url(../fonts/Roboto-Regular.ttf) format("truetype");font-weight:400}@font-face{font-family:Roboto;src:url(../fonts/Roboto-Medium.ttf) format("truetype");font-weight:500}@font-face{font-family:Roboto;src:url(../fonts/Roboto-Bold.ttf) format("truetype");font-weight:700}html{box-sizing:border-box;scroll-behavior:smooth}*,::after,::before{box-sizing:inherit}button{border:none;cursor:pointer}a{cursor:pointer;text-decoration:none}body{margin:0;padding:0;font-family:"TT Firs Neue",sans-serif;background-color:var(--color-white);color:#fff}img{max-width:100%}button:focus-visible{outline:0}a:focus,a:focus-visible{outline:0}input:focus,input:focus-visible,textarea:focus,textarea:focus-visible{outline:#ff4019 solid 1px}ul{list-style:none;padding:0}.is-outer{position:relative!important;left:-9999px!important}.site-container{overflow:hidden}.is-hidden{display:none!important}.for-mobile{display:none}.error{border:2px solid #ff4019!important}.btn-reset{border:none;background:0 0;cursor:pointer}.container{margin:0 auto;padding:0 10px;max-width:1310px}.js-focus-visible :focus:not(.focus-visible){outline:0}.section__title{font-family:TT Firs Neue;font-style:normal;font-weight:700;font-size:24px;line-height:31px}.transparent-btn{font-family:Roboto sans-serif;font-weight:700;font-size:16px;line-height:19px;color:#fff;border:3px solid #ff6e30;background-color:transparent;padding:15px 22px;transition:.2s ease-in-out}.transparent-btn:hover{background:#ff6e30}.transparent-btn:focus{background:#bc572b}.transparent-btn:active{background:#ce4307;border:3px solid #ce4307}.btn-orange{font-family:Roboto,sans-serif;background:#ff6e30;font-weight:700;font-size:16px;line-height:19px;color:#fff;padding:15px 21px;border:3px solid #ff6e30;transition:.2s ease-in-out}.btn-orange:hover{background-color:#bc572b;border:3px solid #bc572b}.btn-orange:focus{border:3px solid #ce4307}.btn-orange:active{background:#ce4307;border:3px solid #ce4307}@media (max-width:1380px){.container{max-width:100%;padding-left:15px;padding-right:15px}}@media (max-width:1040px){.container{max-width:100%;padding-left:31px;padding-right:31px}}@media (max-width:768px){.for-mobile{display:block}.container{max-width:100%;padding-left:27px;padding-right:27px}}@media (max-width:540px){.container{max-width:100%;padding-left:20px;padding-right:20px}.section__title{font-size:18px;line-height:23.22px}.btn-orange{font-size:14px;line-height:16px;padding:10px 21px}.transparent-btn{font-size:14px;line-height:16.5px;padding:9px 18px}}
+:root {
+  --color-black: #000;
+  --color-white: #fff; }
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Light.woff2") format("woff2");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Regular.woff2") format("woff2");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Bold.woff2") format("woff2");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+button {
+  border: none;
+  cursor: pointer; }
+
+a {
+  cursor: pointer; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "TT Firs Neue", sans-serif;
+  background-color: var(--color-white);
+  color: #FFFFFF; }
+
+img {
+  max-width: 100%; }
+
+button:focus-visible {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+a:focus,
+a:focus-visible {
+  outline: none; }
+
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+  outline: 1px solid #ff4019; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .for-mobile {
+      display: block; } }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1310px; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+.section__title {
+  font-family: TT Firs Neue;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px; }
+
+.transparent-btn {
+  font-family: Roboto sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border: 3px solid #FF6E30;
+  background-color: transparent;
+  padding: 15px 22px;
+  transition: all .2s ease-in-out; }
+
+.transparent-btn:hover {
+  background: #FF6E30; }
+
+.transparent-btn:focus {
+  background: #BC572B; }
+
+.transparent-btn:active {
+  background: #CE4307;
+  border: 3px solid #CE4307; }
+
+.btn-orange {
+  font-family: "Roboto", sans-serif;
+  background: #ff6e30;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 15px 21px;
+  border: 3px solid #ff6e30;
+  transition: all .2s ease-in-out; }
+
+.btn-orange:hover {
+  background-color: #BC572B;
+  border: 3px solid #BC572B; }
+
+.btn-orange:focus {
+  border: 3px solid #CE4307; }
+
+.btn-orange:active {
+  background: #CE4307;
+  border: 3px solid #CE4307; }
+
+@media (max-width: 1380px) {
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media (max-width: 1040px) {
+  .container {
+    max-width: 100%;
+    padding-left: 31px;
+    padding-right: 31px; } }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding-left: 27px;
+    padding-right: 27px; } }
+
+@media (max-width: 540px) {
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .section__title {
+    font-size: 18px;
+    line-height: 23.22px; }
+  .btn-orange {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 21px; }
+  .transparent-btn {
+    font-size: 14px;
+    line-height: 16.5px;
+    padding: 9px 18px; } }
+
+/*# sourceMappingURL=global.css.map */

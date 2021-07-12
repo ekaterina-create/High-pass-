@@ -35,16 +35,35 @@ document.addEventListener('DOMContentLoaded', () => {
 // burger
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
+const container = document.querySelector('.header__container')
 burger.addEventListener('click', (e) => {
   e.currentTarget.classList.toggle('burger--active');
   nav.classList.toggle('active');
-});
 
+});
+document.body.addEventListener('click', (e) => {
+  if (e.target.classList.contains('nav-link')) {
+
+    nav.classList.remove('active');
+    burger.classList.remove('burger--active');
+  }
+})
+
+document.addEventListener('click', outsideEvtListener);
+
+function outsideEvtListener(evt) {
+  if (evt.target === nav || nav.contains(evt.target) || evt.target === burger) {
+
+    return;
+  }
+  nav.classList.remove('active');
+  burger.classList.remove('burger--active');
+
+}
 // open search form
 const searchActivate = () => {
-
   document.querySelector('.form__btn').addEventListener('click', (e) => {
-    if (window.innerWidth < 999) {
+    if (window.innerWidth < 1010) {
       e.preventDefault()
       document.querySelector('.search__form').classList.toggle('active')
     }
